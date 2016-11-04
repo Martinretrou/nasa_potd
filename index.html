@@ -1,0 +1,31 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>A.P.O.D</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,700" rel="stylesheet">
+    <link href="app/css/style.min.css" rel="stylesheet" />
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+</head>
+
+<body ng-app="myApp">
+    <header>
+        <div class="container_logo">arguru_</div>
+    </header>
+    <div class="main" ng-controller="MainContent">
+        <img class="main_img" src="{{hdurl}}"/>
+        <div class="container_desc">
+            <h1>{{title}}</h1>
+            <p><strong>Copyright :</strong> {{copyright}}</p>
+            <p>{{explanation}}</p>
+            <p class="credits">From Astronomy Picture of the Day / NASA</p>
+        </div>
+    </div>
+    <!-- Modules -->
+    <script src="app/js/app.js"></script>
+    <!-- Controllers -->
+    <script src="app/js/controllers/MainContent.js"></script>
+    <script src="app/js/controllers/Header.js"></script>
+</body>
+
+</html>
