@@ -3,7 +3,7 @@ var wiredep = require('wiredep').stream;
 var sass = require('gulp-sass');
 var cssmin = require('gulp-cssmin');
 var rename = require('gulp-rename');
-var dotenv = require('dotenv').config();
+var dotenv = require('dotenv');
 var fs = require('fs');
 
 const envFileExist = fs.existsSync('./.env');

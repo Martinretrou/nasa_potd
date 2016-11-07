@@ -30,10 +30,23 @@ header {
 }
 
 .container_logo {
+    position:absolute;
+    top: 20px;
+    left: 20px;
     font-family: $m-font;
     font-weight: 700;
     font-size: 2em;
     color: #FFF;
+    z-index: 3;
+}
+
+.logo_nasa {
+    position: absolute;
+    width: 100px;
+    height: auto;
+    z-index: 3;
+    top: 20px;
+    right: 20px;
 }
 
 .main {

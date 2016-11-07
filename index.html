@@ -9,9 +9,8 @@
 </head>
 
 <body ng-app="myApp">
-    <header>
-        <div class="container_logo">arguru_</div>
-    </header>
+        <div class="container_logo">APOD</div>
+        <img class="logo_nasa" src="http://www.dafont.com/forum/attach/orig/5/2/524557.png"/>
     <div class="main" ng-controller="MainContent">
         <img class="main_img" src="{{hdurl}}"/>
         <div class="container_desc">
@@ -21,11 +20,13 @@
             <p class="credits">From Astronomy Picture of the Day / NASA</p>
         </div>
     </div>
+    <div class="see_more">
+        <h3>Want to see more ?</h3>
+    </div>
     <!-- Modules -->
     <script src="app/js/app.js"></script>
     <!-- Controllers -->
     <script src="app/js/controllers/MainContent.js"></script>
-    <script src="app/js/controllers/Header.js"></script>
 </body>
 
 </html>
