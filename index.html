@@ -5,6 +5,7 @@
     <title>A.P.O.D</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,700" rel="stylesheet">
     <link href="app/css/style.min.css" rel="stylesheet" />
+    <link href="node_modules/angularjs-datepicker/src/css/angular-datepicker.css" rel="stylesheet" type="text/css" />
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
 </head>
 
@@ -18,15 +19,17 @@
             <p><strong>Copyright :</strong> {{copyright}}</p>
             <p>{{explanation}}</p>
             <p class="credits">From Astronomy Picture of the Day / NASA</p>
+            <h3>Want to see a specific date ?</h3>
+            <datepicker>
+                <input ng-model="date" type="text"/>
+            </datepicker>
         </div>
-    </div>
-    <div class="see_more">
-        <h3>Want to see more ?</h3>
     </div>
     <!-- Modules -->
     <script src="app/js/app.js"></script>
     <!-- Controllers -->
     <script src="app/js/controllers/MainContent.js"></script>
+    <script src="node_modules/angularjs-datepicker/src/js/angular-datepicker.js"></script>
 </body>
 
 </html>
