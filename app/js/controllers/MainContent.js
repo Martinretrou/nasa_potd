@@ -6,8 +6,29 @@ app.controller('MainContent', function($scope, $http) {
         method: 'GET',
         dataType:"json",
         contentType:"application/json; charset=utf-8",
+        //params:{
+        //  date: $scope.date,
+        //},
+        url: 'https://api.nasa.gov/planetary/apod?api_key=' + apiKey,
+    }).then(function successCallback(response) {
+        $scope.copyright = response.data.copyright;
+        $scope.date = response.data.date;
+        $scope.explanation = response.data.explanation;
+        $scope.hdurl = response.data.hdurl;
+        $scope.url = response.data.url;
+        $scope.title = response.data.title;
+
+    }, function errorCallback(response) {
+        console.log('Something went wrong...');
+    });
+
+    $scope.request = function() {
+      $http({
+        method: 'GET',
+        dataType:"json",
+        contentType:"application/json; charset=utf-8",
         params:{
-          //date:'2016-11-03', set date to see specific img
+          date: $scope.date,
         },
         url: 'https://api.nasa.gov/planetary/apod?api_key=' + apiKey,
     }).then(function successCallback(response) {
@@ -21,6 +42,8 @@ app.controller('MainContent', function($scope, $http) {
     }, function errorCallback(response) {
         console.log('Something went wrong...');
     });
+    }
+    
 });
 
 

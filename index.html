@@ -19,10 +19,15 @@
             <p><strong>Copyright :</strong> {{copyright}}</p>
             <p>{{explanation}}</p>
             <p class="credits">From Astronomy Picture of the Day / NASA</p>
-            <h3>Want to see a specific date ?</h3>
-            <datepicker>
-                <input ng-model="date" type="text"/>
-            </datepicker>
+            <div class="container_date">
+                <h3>Want to see a specific date ?</h3>
+                <form ng-submit="request()">
+                    <datepicker date-format="yyyy-MM-dd">
+                        <input ng-model="date" type="text"/>
+                    </datepicker>
+                    <button type="submit">Go to this date</button>
+                </form>
+            </div>
         </div>
     </div>
     <!-- Modules -->
