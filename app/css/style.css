@@ -80,3 +80,16 @@ header {
 
 .container_date {
   width: 50%; }
+  .container_date button {
+    margin-top: 5%;
+    width: 150px;
+    height: 30px;
+    border: none;
+    border-radius: 5px;
+    background-color: #1A5DAD;
+    color: white;
+    cursor: pointer; }
+    .container_date button:hover {
+      opacity: 0.8; }
+    .container_date button:focus {
+      outline: 0; }

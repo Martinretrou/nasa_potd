@@ -1,4 +1,4 @@
-$m-color: #F05941;
+$m-color: #1A5DAD;
 $light-grey: #9D9D9C;
 $m-font: 'Roboto',sans-serif;
 $s-font: 'Open Sans',sans-serif;
@@ -99,6 +99,25 @@ header {
 
 .container_date {
     width: 50%;
+
+    button {
+        margin-top: 5%;
+        width: 150px;
+        height: 30px;
+        border: none;
+        border-radius: 5px;
+        background-color: $m-color;
+        color: white;
+        cursor: pointer;
+
+        &:hover {
+            opacity: 0.8;
+        }
+
+        &:focus {
+            outline: 0;
+        }
+    }
 }
 
 @media #{$m-screen} {}
