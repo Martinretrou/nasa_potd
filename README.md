@@ -1,4 +1,4 @@
-# nasa_potd
+# NASA POTD :earth_americas:
 Little to project to learn the usage of API (using the open API of NASA) and AngularJS.
 
 #Usage
