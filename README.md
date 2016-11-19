@@ -9,6 +9,7 @@ If you want to see a specific date, you can choose a date with the datepicker an
 
 #To-do
 
+Responsive <br/>
 Improve UI/UX<br/>
 Load low definition image first then high definition image (to improve load time).<br/>
 Style the datepicker to the color of the UI.
